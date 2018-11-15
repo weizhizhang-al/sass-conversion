@@ -35,13 +35,13 @@
 }
 html{
     font-size: 16px;
-    font-family: 'Josefin Sans', ‘Trebuchet MS’, Helvetica, sans-serif; /* default for whole page */
+    font-family: $main-font-family; /* default for whole page */
     line-height: 1.6;
     font-weight: 400;
 }
 h1, h2, h3, h4{
     font-weight: 700;
-    font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; /* serif for the headings */
+    font-family: $header-font-family; /* serif for the headings */
 }
 ul{
     list-style: none;
@@ -59,7 +59,7 @@ ul{
     background-color: #fff;
     background-color:$light-blue;
     color: #222;
-    border-bottom:1rem solid $med-blue:;
+    border-bottom:1rem solid $med-blue;
     border-top:1rem solid $dark-blue;
     position: relative;
 }
@@ -408,7 +408,7 @@ footer h4[lang=ru]{
         font-size: 1.414rem;
     }
     footer .fa-circle{
-        color: $med-blue:;
+        color: $med-blue;
     }
     footer .row:first-child .col:last-child{
         unicode-bidi: bidi-override;
@@ -677,7 +677,7 @@ footer h4[lang=ru]{
         color: #d4d4d4;
     }
     footer .fa-circle{
-        color: $med-blue:;
+        color: $med-blue;
     }
     
     footer h4[lang=en]{
