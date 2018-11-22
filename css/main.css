@@ -145,10 +145,8 @@ section.content2 {
   justify-content: flex-start;
   align-items: stretch;
 }
-
 .row .col {
   flex-basis: 100%;
-  /* mobile default */
 }
 
 footer .row {

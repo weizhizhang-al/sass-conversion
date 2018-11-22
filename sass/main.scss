@@ -141,10 +141,14 @@ section.content2{
     flex-direction: column;
     justify-content: flex-start;
     align-items:stretch;
+    
+    .col{
+        flex-basis: 100%;
+    }
 }
-.row .col{
-    flex-basis: 100%; /* mobile default */
-}
+//.row .col{
+//    flex-basis: 100%; /* mobile default */
+//}
 
 footer .row{
     flex-wrap: nowrap;
