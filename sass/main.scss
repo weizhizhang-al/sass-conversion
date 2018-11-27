@@ -509,11 +509,18 @@ footer h4[lang=ru]{
         justify-content: space-around;
         align-items: flex-start;
     }
+    
+    
     .content1 .row .col{
-        flex-basis: 33%;
-        flex-grow: 1;
-        flex-shrink: 0;
+        @include content1-row-col;
     }
+    
+    
+//    .content1 .row .col{
+//        flex-basis: 33%;
+//        flex-grow: 1;
+//        flex-shrink: 0;
+//    }
     .content2 .row .col{
         flex-basis: 25%;
         flex-grow: 1;
