@@ -3,8 +3,18 @@
     box-sizing: inherit;
 }
 
-@mixin content1-row-col{
-     flex-basis: 33%;
-        flex-grow: 1;
-        flex-shrink: 0;
+
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media all and (min-width: $break-small ) and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media all and (min-width: $break-medium) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media all and (min-width: $break-large) { @content; }
+  }
+    
+  
 }

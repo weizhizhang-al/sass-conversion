@@ -511,16 +511,13 @@ footer h4[lang=ru]{
     }
     
     
-    .content1 .row .col{
-        @include content1-row-col;
-    }
-    
-    
 //    .content1 .row .col{
 //        flex-basis: 33%;
 //        flex-grow: 1;
 //        flex-shrink: 0;
 //    }
+    
+    
     .content2 .row .col{
         flex-basis: 25%;
         flex-grow: 1;
@@ -636,11 +633,11 @@ footer h4[lang=ru]{
         justify-content: space-evenly;
         align-items: flex-start;
     }
-    .content1 .row .col{
-        flex-basis: 30%;
-        flex-grow: 1;
-        flex-shrink: 0;
-    }
+//    .content1 .row .col{
+//        flex-basis: 30%;
+//        flex-grow: 1;
+//        flex-shrink: 0;
+//    }
     .content2 .row .col{
         flex-basis: 20%;
         flex-grow: 1;
@@ -707,3 +704,14 @@ footer h4[lang=ru]{
     }
     
 }
+
+.content1 .row .col {
+    
+  @include respond-to(handhelds) {  }
+  @include respond-to(medium-screens) { flex-basis: 33%;  flex-grow: 1;
+    flex-shrink: 0;}
+  @include respond-to(wide-screens) {   flex-basis: 30%;flex-grow: 1;
+    flex-shrink: 0;}
+    
+}
+

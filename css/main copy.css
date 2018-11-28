@@ -352,6 +352,12 @@ footer h4[lang=ru] {
                 MEDIA QUERIES
 ***********************************************/
 @media all and (min-width: 701px) and (max-width: 900px) {
+  header {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 8rem;
+  }
+
   header h1 {
     width: 100%;
     color: #7C593C;
@@ -469,6 +475,11 @@ footer h4[lang=ru] {
   }
 }
 @media all and (min-width: 901px) and (max-width: 1400px) {
+  header {
+    width: 900px;
+    margin: 0 auto;
+  }
+
   header:before,
 header:after {
     width: 300px;
@@ -548,6 +559,12 @@ footer .row {
     align-items: flex-start;
   }
 
+  .content1 .row .col {
+    flex-basis: 33%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
   .content2 .row .col {
     flex-basis: 25%;
     flex-grow: 1;
@@ -604,6 +621,11 @@ footer h4[lang=en] {
   }
 }
 @media all and (min-width: 1401px) {
+  header {
+    width: 1400px;
+    margin: 0 auto;
+  }
+
   header:before,
 header:after {
     width: 450px;
@@ -674,6 +696,12 @@ footer .row {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
+  }
+
+  .content1 .row .col {
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   .content2 .row .col {
@@ -749,40 +777,6 @@ footer .row {
 footer h4[lang=ar],
 footer h4[lang=ru] {
     display: none;
-  }
-}
-@media all and (min-width: 901px) and (max-width: 1400px) {
-  .content1 .row .col {
-    flex-basis: 33%;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-}
-@media all and (min-width: 1401px) {
-  .content1 .row .col {
-    flex-basis: 30%;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-}
-
-@media all and (min-width: 701px) and (max-width: 900px) {
-  header {
-    width: 700px;
-    margin: 0 auto;
-    min-height: 8rem;
-  }
-}
-@media all and (min-width: 901px) and (max-width: 1400px) {
-  header {
-    width: 900px;
-    margin: 0 auto;
-  }
-}
-@media all and (min-width: 1401px) {
-  header {
-    width: 1400px;
-    margin: 0 auto;
   }
 }
 
