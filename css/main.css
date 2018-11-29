@@ -31,7 +31,10 @@ html {
   font-weight: 400;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
   /* serif for the headings */
@@ -205,11 +208,11 @@ header h1 {
 }
 
 header h1 i.fa-lg {
-  display: block;
-  width: 25%;
-  float: left;
-  font-size: 7rem;
-  line-height: 12.7936rem;
+  display: inline;
+  vertical-align: baseline;
+  float: none;
+  font-size: 4rem;
+  line-height: 6.3968rem;
   color: #C9A689;
 }
 
@@ -352,6 +355,12 @@ footer h4[lang=ru] {
                 MEDIA QUERIES
 ***********************************************/
 @media all and (min-width: 701px) and (max-width: 900px) {
+  header {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 8rem;
+  }
+
   header h1 {
     width: 100%;
     color: #7C593C;
@@ -364,11 +373,11 @@ header:after {
 
   header h1 i.fa-lg {
     display: inline;
-    color: #7C593C;
     vertical-align: baseline;
     float: none;
     font-size: 4rem;
     line-height: 6.3968rem;
+    color: #7C593C;
   }
 
   header h1 i.fa-lg ~ span {
@@ -469,6 +478,11 @@ footer h4[lang=ru] {
   }
 }
 @media all and (min-width: 901px) and (max-width: 1400px) {
+  header {
+    width: 900px;
+    margin: 0 auto;
+  }
+
   header:before,
 header:after {
     width: 300px;
@@ -481,11 +495,11 @@ header:after {
 
   header h1 i.fa-lg {
     display: inline;
-    color: #3a5E63;
     vertical-align: baseline;
     float: none;
     font-size: 4rem;
     line-height: 6.3968rem;
+    color: #3a5E63;
   }
 
   header h1 i.fa-lg ~ span {
@@ -548,6 +562,12 @@ footer .row {
     align-items: flex-start;
   }
 
+  .content1 .row .col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 33%;
+  }
+
   .content2 .row .col {
     flex-basis: 25%;
     flex-grow: 1;
@@ -604,6 +624,11 @@ footer h4[lang=en] {
   }
 }
 @media all and (min-width: 1401px) {
+  header {
+    width: 1400px;
+    margin: 0 auto;
+  }
+
   header:before,
 header:after {
     width: 450px;
@@ -616,11 +641,11 @@ header:after {
 
   header h1 i.fa-lg {
     display: inline;
-    color: #7C593C;
     vertical-align: baseline;
     float: none;
     font-size: 4rem;
     line-height: 6.3968rem;
+    color: #7C593C;
   }
 
   header h1 i.fa-lg ~ span {
@@ -674,6 +699,12 @@ footer .row {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
+  }
+
+  .content1 .row .col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30%;
   }
 
   .content2 .row .col {
@@ -749,40 +780,6 @@ footer .row {
 footer h4[lang=ar],
 footer h4[lang=ru] {
     display: none;
-  }
-}
-@media all and (min-width: 901px) and (max-width: 1400px) {
-  .content1 .row .col {
-    flex-basis: 33%;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-}
-@media all and (min-width: 1401px) {
-  .content1 .row .col {
-    flex-basis: 30%;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-}
-
-@media all and (min-width: 701px) and (max-width: 900px) {
-  header {
-    width: 700px;
-    margin: 0 auto;
-    min-height: 8rem;
-  }
-}
-@media all and (min-width: 901px) and (max-width: 1400px) {
-  header {
-    width: 900px;
-    margin: 0 auto;
-  }
-}
-@media all and (min-width: 1401px) {
-  header {
-    width: 1400px;
-    margin: 0 auto;
   }
 }
 
